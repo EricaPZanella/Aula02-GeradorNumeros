@@ -9,38 +9,68 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="wrap_content"
+        android:layout_width="163dp"
         android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginBottom="18dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="266dp"
+        android:text="Nenhum número sorteado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="181dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="31dp"
         android:onClick="alterarTexto"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
+        android:text="SORTEAR"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="154dp"
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/text"
+        android:text="Entre com o intervalo"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="139dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </android.support.constraint.ConstraintLayout>

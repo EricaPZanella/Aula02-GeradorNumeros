@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,12 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void alterarTexto(View view) {
 
-        //Button b = (Button) view;
-        //b.setText("Aula de sexta é boa!");
+    int numAux;
+    numAux = 1 + (int) (Math.random() * 100);
 
-        TextView text = (TextView) findViewById(R.id.text);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        text.setText(editText.getText().toString());
+    TextView text = (TextView) findViewById(R.id.text);
+    text.setText(Integer.toString(numAux));
 
     }
 
